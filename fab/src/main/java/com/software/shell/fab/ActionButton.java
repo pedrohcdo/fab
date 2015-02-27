@@ -1013,6 +1013,7 @@ public class ActionButton extends View {
 				setState(State.PRESSED);
 				return true;
 			case MotionEvent.ACTION_UP:
+			case MotionEvent.ACTION_CANCEL:
 				Log.v(LOG_TAG, "Motion event action up detected");
 				setState(State.NORMAL);
 				return true;
